@@ -1,0 +1,346 @@
+h1 h2 h3 h4 h5 h6 {
+    font-family: 'Anton', sans-serif;
+  }
+  p {
+    font-family: 'Jura', sans-serif;
+  }
+  /*nav bar*/
+  header {
+    margin-top: 0;
+}
+.navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px 10px;
+    color: black;
+    margin-bottom: 50px;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+
+.inline-block {
+  display: flex;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.logo img{
+    max-width: 50px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: -15px;
+}
+
+nav {
+    display: flex;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.inline-block li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: "arial", sans-seriff;
+    font-size: 1rem;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 46px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    margin-left: 40px;
+    margin-top: 150px;
+}
+
+  /*Jumbotron*/
+  .jumbotron {
+    position: relative;
+    width: 100%;
+    height: 550px; 
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("/images/gif\ purple.gif") repeat-x; 
+    animation: moveBackground 30s linear infinite; 
+  }
+  
+  .jumbotron:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  .container-fluid h1 {
+    display: flex;
+    text-align: left;
+    font-size: 3rem;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  
+  .container-fluid p {
+    display: flex;
+    margin-top: 50px;
+    text-align: left;
+    color: whitesmoke;
+    font-size: 1.2rem;
+  }
+  
+  /*about me*/
+  .heroImg {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .heroImg:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hero-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .content {
+    max-width: 600px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .content p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  
+  .button {
+    background: linear-gradient(135deg, #ff4081, #ff79b0);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background 0.2s;
+  }
+  
+  .button:hover {
+    background: linear-gradient(135deg, #ff79b0, #ff4081);
+  }
+
+  /*my skills*/
+  .mySkills {
+    padding: 50px;
+  }
+
+  .myWork {
+    padding: 50px;
+  }
+  
+  .sectionHeading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .gridContainer h5 {
+    display: flex;
+    justify-content: center;
+  }
+  .gridItem {
+    background: #f8f9fa;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+
+  .gridItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .grid-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .grid-body {
+    padding: 20px;
+  }
+  
+  .grid-title {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .grid-text {
+    color: #666;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .btn {
+    background: linear-gradient(135deg, #ff4081, #ff79b0);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 20px;
+    transition: background 0.2s;
+    ;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(135deg, #ff79b0, #ff4081);
+  }
+
+
+  /* 3 cards*/
+  .grid-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+
+
+
+  .workTogether {
+    margin: 0;
+    margin-bottom: 0;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+ }
+ 
+ .workTogether h2 {
+     display: flex;
+     justify-content: center;
+     font-family: "arial", sans-serif;
+     color: white;
+ }
+ 
+ .letsWork {
+     text-align: center;
+ }
+ 
+ .button-container {
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .btn {
+     width: 150px;
+     padding: 10px 20px;
+     margin: 10px;
+     text-align: center;
+     background-color: gray;
+     border: none;
+     border-radius: 25px;
+     transition: 0.3s;
+     font-size: 12px;
+     font-weight: light bold;
+     text-transform: uppercase;
+     color: whitesmoke;
+ }
+ 
+ /*footer*/
+ footer {
+  background-image: url("/images/new\ footer\ bg.jpg"); 
+  background-size: cover; /
+  background-position: center; 
+  background-repeat: no-repeat; 
+  animation: moveBackground 30s linear infinite; 
+  color: white; 
+}
+ .footer {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+  padding: 20px;  
+  color: white;
+  bottom: 0; 
+  width: 100%; 
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.footer .inline-block {
+  display: flex;
+  margin-bottom: 15px;
+  margin-right: 30px;
+}
+
+
+
+
+
+
+ @media only screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+    .flexContainer .flexChild {
+        width: 100%;
+    }
+    .workGrid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .workGrid > div {
+        margin-bottom: 20px;
+    }
+}
