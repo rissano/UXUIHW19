@@ -82,6 +82,8 @@ h1 {
     align-items: center;
     justify-content: center; 
     animation: moveBackground 30s linear infinite; 
+    margin-bottom: 0; 
+    padding-bottom: 0; 
   }
 
   
@@ -91,7 +93,7 @@ h1 {
     text-align: left;
     font-size: 3rem;
     color: whitesmoke;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-top: 0;
   }
   
@@ -103,6 +105,19 @@ h1 {
     font-size: 1.2rem;
   }
   
+
+  .jumbotron .container-fluid {
+    padding-bottom: 0; 
+}
+
+.jumbotron h1, .jumbotron p {
+    margin-bottom: 0; 
+}
+
+.jumbotron .container-fluid > *:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
   /*about me*/
   .heroImg {
     display: flex;
@@ -318,7 +333,7 @@ h1 {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) { 
   .navigation {
       flex-direction: column;
       align-items: flex-start;
@@ -366,4 +381,4 @@ h1 {
   }
 
   .content {
-      max-width: 100%;
+      max-width: 100%; }}
