@@ -80,7 +80,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center; 
-    background: url("/images/gif%20purple.gif") repeat-x;
+    background:url("images/gif%20purple.gif") repeat-x;
     animation: moveBackground 30s linear infinite; 
   }
   
