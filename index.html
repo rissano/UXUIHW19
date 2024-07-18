@@ -7,6 +7,8 @@
 
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
     <link rel="stylesheet" type="text/css" href="css/index.css">
 
     <title>Portfolio</title>
@@ -49,25 +51,49 @@
     </section>
 
      <!-- my skills -->
+     <script>
+      $(document).ready(function(){
+        console.log('jQuery is loaded and ready!');  // Debug log
+        $('.gridItem').hover(
+          function() {
+            // On mouse enter
+            let img = $(this).find('.grid-img');
+            let originalSrc = img.attr('src');
+            console.log('Original src:', originalSrc);  // Debug log
+            let newSrc = originalSrc.replace('still.jpeg', 'hover.gif');
+            console.log('New src:', newSrc);  // Debug log
+            img.data('original-src', originalSrc);
+            img.attr('src', newSrc);
+          },
+          function() {
+            // On mouse leave
+            let img = $(this).find('.grid-img');
+            console.log('Reverting to original src:', img.data('original-src'));  // Debug log
+            img.attr('src', img.data('original-src'));
+          }
+        );
+      });
+    </script>
+
      <section class="mySkills">
       <h2 class="sectionHeading">My UX Skills</h2>
       <div class="gridContainer">
         <div class="gridItem">
-          <img src="images/ui visual design.PNG" class="grid-img" alt="UI Design">
+          <img src="images/ui_still.jpeg" class="grid-img" alt="UI Design">
           <div class="grid-body">
             <h5 class="grid-title">UI/Visual Design</h5>
             <p class="grid-text">My skills encompass color theory, typography, and layout design to ensure that every element on the screen is both functional and visually appealing. I aim to deliver seamless and delightful user experiences that enhance overall usability.</p>
           </div>
         </div>
         <div class="gridItem">
-          <img src="images/ux.PNG" class="grid-img" alt="UX Design">
+          <img src="images/ux_still.jpeg" class="grid-img" alt="UX Design">
           <div class="grid-body">
             <h5 class="grid-title">UX Design</h5>
             <p class="grid-text">Crafting intuitive and engaging user journeys through meticulous research, usability testing, and iterative design processes is how I ensure optimal user satisfaction and product success.</p>
           </div>
         </div>
         <div class="gridItem">
-          <img src="images/prototyping.PNG" class="grid-img" alt="Prototyping">
+          <img src="images/prototype_still.jpeg" class="grid-img" alt="Prototyping">
           <div class="grid-body">
             <h5 class="grid-title">Prototyping</h5>
             <p class="grid-text">Prototyping is how my ideas come to life. Ranging from low-fidelity wireframes to high-fidelity, interactive models, they ensure a clear vision of the final product and enable effective communication and feedback throughout the design process.</p>
