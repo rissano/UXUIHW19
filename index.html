@@ -53,22 +53,22 @@
      <!-- my skills -->
      <script>
       $(document).ready(function(){
-        console.log('jQuery is loaded and ready!');  // Debug log
+        console.log('jQuery is loaded and ready!');  
         $('.gridItem').hover(
           function() {
             // On mouse enter
             let img = $(this).find('.grid-img');
             let originalSrc = img.attr('src');
-            console.log('Original src:', originalSrc);  // Debug log
+            console.log('Original src:', originalSrc);  
             let newSrc = originalSrc.replace('still.jpeg', 'hover.gif');
-            console.log('New src:', newSrc);  // Debug log
+            console.log('New src:', newSrc);  
             img.data('original-src', originalSrc);
             img.attr('src', newSrc);
           },
           function() {
             // On mouse leave
             let img = $(this).find('.grid-img');
-            console.log('Reverting to original src:', img.data('original-src'));  // Debug log
+            console.log('Reverting to original src:', img.data('original-src')); 
             img.attr('src', img.data('original-src'));
           }
         );
@@ -120,7 +120,9 @@
           <div class="grid-body">
             <h5 class="grid-title">Planify Travel App</h5>
             <p class="grid-text">Planify was designed to make booking trips seamless and personalized. The app tailors travel options to users' specific needs and preferences, providing an intuitive interface and a streamlined booking process.</p>
-              <button class="button">View Project</button>
+            <a href="http://127.0.0.1:5500/index.html">  
+              <button class="button">View Case Study</button>
+          </a> 
           </div>
         </div>
         <div class="gridItem">
